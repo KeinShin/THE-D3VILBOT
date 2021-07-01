@@ -1,1 +1,1 @@
-worker: bash Hellbot
+worker: bash THE-D3VILBOT
