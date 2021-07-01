@@ -26,7 +26,7 @@ _repolink () {
 
 start_bot () {
     local zippath
-    zippath="THE-D3VILBOT.zip"
+    zippath="d3vilbot.zip"
     echo "  Downloading source code ..."
     wget -q $(_repolink) -O "$zippath"
     echo "  Unpacking Data ..."
@@ -39,7 +39,7 @@ start_bot () {
     echo "  • Starting D3VILBot •  "
 
     python3 ../setup/updater.py ../requirements.txt requirements.txt
-    python3 -m THE-D3VILBOT
+    python3 -m d3vilbot
 }
 
 start_bot
